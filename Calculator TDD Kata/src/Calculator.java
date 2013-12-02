@@ -1,23 +1,19 @@
 
 public class Calculator {
 
-	public int calculate(String input) 
+	public int Add(String input) 
 	{
-		// TODO Auto-generated method stub
-		if(isEmpty(input))
+		String[] numbers = input.split(",");
+		if(input.isEmpty())
 		{
 			return 0;
 		}
-		return stringToInt(input);
+		else 
+		{
+			return Integer.parseInt(numbers[0]) + Integer.parseInt(numbers[1]);
+		}
 	}
 	
-	private int stringToInt(String input)
-	{
-		return Integer.parseInt(input);
-	}
-	private boolean isEmpty(String input)
-	{
-		return input.isEmpty();
-	}
+	
 
 }

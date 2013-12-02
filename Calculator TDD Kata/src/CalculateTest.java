@@ -11,7 +11,7 @@ public class CalculateTest
 	@Test
 	public void emptyString()
 	{
-		int result = calculator.calculate("");
+		int result = calculator.Add("");
 		assertEquals(0, result);
 		
 	}
@@ -19,11 +19,15 @@ public class CalculateTest
 	@Test
 	public void returnSingleValue()
 	{
-		//init();
-		Calculator calculator = new Calculator();
-		int result1 = calculator.calculate("1");
-
+		int result1 = calculator.Add("1");
 		assertEquals(1, result1);
+	}
+	
+	@Test
+	public void returnTwoValues()
+	{
+		int result = calculator.Add("1,2");
+		assertEquals(3, result);
 	}
 
 }
