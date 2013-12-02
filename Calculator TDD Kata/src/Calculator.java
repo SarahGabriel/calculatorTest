@@ -8,10 +8,12 @@ public class Calculator {
 		{
 			return 0;
 		}
-		else 
+		else if(numbers.length > 1)
 		{
 			return Integer.parseInt(numbers[0]) + Integer.parseInt(numbers[1]);
 		}
+		else
+			return Integer.parseInt(numbers[0]);
 	}
 	
 	
