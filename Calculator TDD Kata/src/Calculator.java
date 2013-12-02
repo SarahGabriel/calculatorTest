@@ -10,7 +10,7 @@ public class Calculator {
 		{
 			return 0;
 		}
-		else if(numbers.length > 1)
+		else 
 		{
 			for(i=0; i<numbers.length; i++)
 			{
@@ -18,8 +18,7 @@ public class Calculator {
 			}
 			return result;
 		}
-		else
-			return Integer.parseInt(numbers[0]);
+		
 	}
 	
 	
