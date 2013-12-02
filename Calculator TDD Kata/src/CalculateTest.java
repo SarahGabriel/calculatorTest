@@ -23,7 +23,7 @@ public class CalculateTest
 		Calculator calculator = new Calculator();
 		int result1 = calculator.calculate("1");
 
-		assertEquals(0, result1);
+		assertEquals(1, result1);
 	}
 
 }
